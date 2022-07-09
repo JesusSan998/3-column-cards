@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root{
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+    --font1: 'Lexend Deca', sans-serif;
+    --font2: 'Big Shoulders Display', cursive;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--font1);
+    font-size: 15px;
+    background-color: var(--very-light-gray);
+}
+
+.cards{
+    width: 90%;
+    max-width: 325px;
+    margin: 80px auto;
+}
+
+.cards__item{
+    width: 100%;
+    padding: 44px;
+}
+
+.cards__img{
+    margin-bottom: 20px;
+}
+
+.cards__title{
+    font-family: var(--font2);
+    text-transform: uppercase;
+    color: var(--very-light-gray);
+    font-weight: 700;
+    font-size: 2.4rem;
+    margin-bottom: 25px;
+}
+
+.cards__paragraph{
+    color: var(--transparent-white);
+    line-height: 1.5;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.cards__cta{
+    display: inline-block;
+    background-color: var(--very-light-gray);
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.card1{
+    background-color: var(--bright-orange);
+    border-radius: 10px 10px 0 0;
+}
+
+.card2{
+    background-color: var(--dark-cyan);
+}
+
+.card3{
+    background-color: var(--very-dark-cyan);
+    border-radius: 0 0 10px 10px;
+}
+
+.cta1{
+    color: var(--bright-orange);
+}
+
+.cta1:hover{
+    background-color: var(--bright-orange);
+    color: var(--very-light-gray);
+    outline: 2px solid var(--very-light-gray);
+}
+
+.cta2:hover{
+    background-color: var(--dark-cyan);
+    color: var(--very-light-gray);
+    outline: 2px solid var(--very-light-gray);
+}
+
+.cta3:hover{
+    background-color: var(--very-dark-cyan);
+    color: var(--very-light-gray);
+    outline: 2px solid var(--very-light-gray);
+}
+
+.cta2{
+    color: var(--dark-cyan);
+}
+
+.cta3{
+    color: var(--very-dark-cyan);
+}
+
+@media (min-width: 1024px){
+    .cards{
+        display: flex;
+        max-width: 950px;
+        margin: 110px auto;
+    }
+
+    .cards__item{
+        padding-right: 63px;
+    }
+
+    .cards__paragraph{
+        margin-bottom: 85px;
+    }
+
+    .card1{
+        border-radius: 10px 0 0 10px;
+    }
+
+    .card3{
+        border-radius: 0 10px 10px 0;
+    }
+}
